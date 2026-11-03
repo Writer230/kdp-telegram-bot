@@ -49,7 +49,7 @@ def main():
                         try:
                             # 呼叫 Gemini 生成兒童繪本大綱與內容
                             response = client.models.generate_content(
-                                model="gemini-2.5-flash",
+                                model="gemini-3.8-flash",
                                 contents=f"為兒童寫一個關於以下主題的故事，並分成 24 頁的內容與對應插圖提示詞：{text}"
                             )
                             story_result = response.text
